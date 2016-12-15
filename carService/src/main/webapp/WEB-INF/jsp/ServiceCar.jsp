@@ -36,7 +36,7 @@
 	</form>
 <script type="text/javascript">
 		function getModel(manu) {
-			var artistURL = "http://localhost:8095/carService/nuvizz/rest/fetchModel/"
+			var artistURL = "http://localhost:8080/carService/nuvizz/rest/fetchModel/"
 					+ manu.value + "";
 			var returnData = '';
 			$.ajax({
