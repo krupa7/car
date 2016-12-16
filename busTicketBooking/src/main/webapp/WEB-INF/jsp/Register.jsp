@@ -72,7 +72,7 @@ Address2           : <input type="text" name="address2" id="add2" /><br>
 </tiles:insertDefinition>
 <script type="text/javascript">
 	function getState(country) {
-		var artistURL = "http://localhost:8091/busTicketBooking/nuvizz/rest/fetchState/"
+		var artistURL = "http://localhost:8080/busTicketBooking/nuvizz/rest/fetchState/"
 				+ country.value + "";
 		var returnData = '';
 		$.ajax({
@@ -95,7 +95,7 @@ Address2           : <input type="text" name="address2" id="add2" /><br>
 	}
 
 	function getCity(city) {
-		var artistURL = "http://localhost:8091/busTicketBooking/nuvizz/rest/fetchCity/"
+		var artistURL = "http://localhost:8080/busTicketBooking/nuvizz/rest/fetchCity/"
 				+ city.value + "";
 		var returnData = '';
 		$.ajax({
