@@ -38,11 +38,11 @@
 				<thead id="thead">
 
 					<tr>
-						<th id="rank">Sevice Id</th>
+						<th>Sevice Id</th>
 						<th>Bus Name</th>
 						<th>Provider Name</th>
 						<th>Reg Num</th>
-						<th>Driver Name</th>
+						<th id="rank">Driver Name</th>
 						<th>Contact Num</th>
 						<th>Source</th>
 						<th>Destination</th>
@@ -107,8 +107,8 @@
 			});
 
 			function sortTable(a, b) {
-				var A = parseInt($(a).children('td').eq(0).text(), 10);
-				var B = parseInt($(b).children('td').eq(0).text(), 10);
+				var A = parseInt($(a).children('td').eq(4).text(), 10);
+				var B = parseInt($(b).children('td').eq(4).text(), 10);
 				if (ascending) {
 					if (A > B)
 						return 1;
